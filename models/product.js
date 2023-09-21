@@ -1,38 +1,55 @@
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
-  // name: "iphone",
-  name: {
+  ParentTitle: {
     type: String,
-    required: [true, "Name must be provided"],
   },
-  // price: 154,
-  price: {
-    type: Number,
-    required: [true, "Price Must Be Provided"],
+  ImageLink: {
+    type: String,
   },
-  // featured: false,
-  featured: {
-    type: Boolean,
-    default: false,
+  Alt: {
+    type: String,
   },
-  // rating: 4.8,
-  rating: {
-    type: Number,
-    default: 4.9,
+  Family: {
+    type: String,
   },
-  // createdAt: "2022-11-17T11:39:09.640Z",
+  Years: {
+    type: String,
+  },
+  Frames: {
+    type: String,
+  },
+  Generation: {
+    type: String,
+  },
+  BreadcrumbsH1: {
+    type: String,
+  },
+  ListOfHrefs: [
+    {
+      H1Tag: {
+        type: String,
+      },
+      cards: [
+        {
+          Href: {
+            type: String,
+          },
+          ImageLink: String,
+          Alt: String,
+          hrefH1: String,
+          hrefNumbers: [String],
+          hrefNames: [String],
+          hrefPrices: [String],
+        },
+      ],
+    },
+  ],
+  TypesDiv: String,
+  TextsDiv: String,
   createdAt: {
     type: Date,
     default: Date.now(),
-  },
-  // company: "apple",
-  company: {
-    type: String,
-    enum: {
-      values: ["apple", "samsung", "dell", "mi"],
-      message: `{VALUE} is not supported`,
-    },
   },
 });
 
