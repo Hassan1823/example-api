@@ -1,0 +1,38 @@
+[
+  {
+    "name": "iphone",
+    "price": 154,
+    "featured": true,
+    "company": "apple"
+  },
+  {
+    "name": "iphone1",
+    "price": 150,
+    "featured": false,
+    "company": "dell"
+  },
+  {
+    "name": "iphone2",
+    "price": 124,
+    "featured": true,
+    "company": "samsung"
+  },
+  {
+    "name": "iphone3",
+    "price": 114,
+    "featured": false,
+    "company": "apple"
+  },
+  {
+    "name": "iphone4",
+    "price": 154,
+    "featured": true,
+    "company": "samsung"
+  },
+  {
+    "name": "iphone5",
+    "price": 150,
+    "featured": false,
+    "company": "mi"
+  }
+]
